@@ -54,7 +54,6 @@
         </dependency>
 
 
-
         <dependency>
             <groupId>org.elasticsearch</groupId>
             <artifactId>elasticsearch</artifactId>
@@ -72,13 +71,13 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
+        <!--elasticSearch-->
         <dependency>
             <groupId>org.elasticsearch</groupId>
             <artifactId>elasticsearch-x-content</artifactId>
             <version>${elastic-version}</version>
         </dependency>
-
+        <!--Mysql-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -90,6 +89,19 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+        <!--redis 配置-->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>2.7.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>3.7.1</version>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>
