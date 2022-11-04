@@ -18,6 +18,8 @@ public class ElasticSearchController {
 
 	/**
 	 * ElasticSearch 基线登录测试
+	 * username elastic
+	 * password test1234
 	 *
 	 * @return org.elasticsearch.client.RestHighLevelClient
 	 * @throws
