@@ -24,14 +24,11 @@ public class RedisController {
 		return (Map<Object, Object>) redisTemplate.opsForHash().entries("rasp");
 	}
 
-	/**
-	 * password test
-	 */
 	@RequestMapping("jedisQuery")
-	public List<String> testJedis(String url,String password) {
+	public List<String> testJedis() {
 		List<String> list  = new ArrayList<>();
-		Jedis        jedis = new Jedis(url);
-		jedis.auth(password);
+		Jedis        jedis = new Jedis("localhost");
+		jedis.auth("test");
 		Iterator<String> iterator = jedis.keys("*").iterator();
 		while (iterator.hasNext()) {
 			String key = iterator.next();
